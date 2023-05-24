@@ -1,0 +1,249 @@
+html,body{ 
+    margin: 0;
+    width: 100%;height: 100%;
+  }
+  body{ 
+    background:black
+  }
+  
+  .skills-circle-wrap{ 
+      width: 400px;
+      height: 400px;  
+      position: relative;
+      margin: 10px auto;
+      pointer-events: fill; 
+      cursor: pointer;
+  }
+  .skills-top-circle{
+      position: absolute;  
+      top:0;left:0;right:0;bottom:0;
+      margin: auto;
+      width: 40px;
+      height: 40px; 
+      border-radius: 50%;    
+      background: #fff;   
+     /* background-color: #f6b80d;
+box-shadow: 0 0 5px #f6b80d,
+            0 0 25px #f6b80d,
+            0 0 50px #f6b80d,
+            0 0 200px #f6b80d;the sun */
+ 
+       
+  }
+  .skills-circle{
+      width: 400px;
+      height: 400px;
+      position: absolute;  
+      top:0;left:0;right:0;bottom:0;
+      margin: auto;
+      border-radius: 50%;  
+      /*background-color: #f6b80d;
+box-shadow: 0 0 5px #f6b80d,
+            0 0 25px #f6b80d,
+            0 0 50px #f6b80d,
+            0 0 200px #f6b80d;looks pretty the solarsystem*/
+
+  }  
+  
+  .skill-orbit{
+      border: 1px solid rgba(0,0,0,.2);
+      border-radius: 50%;
+      box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      position: absolute;  
+      top:0;left:0;right:0;bottom:0;
+      margin: auto;
+  }
+  .skill-orbit:nth-child(1){
+      width: 100%; height: 100%;  
+  }
+  .skill-orbit:nth-child(2){
+      width: 82.5%; height: 82.5%; 
+  }
+  .skill-orbit:nth-child(3){
+      width: 65%; height: 65%;
+  }
+  .skill-orbit:nth-child(4){
+      width: 47.5%; height: 47.5%;
+  }
+  .skill-orbit:nth-child(5){
+      width: 30%; height: 30%;
+  }
+  .skill-planet{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%; 
+      position: absolute;
+      top:-15px;
+      left:0;right:0;
+      margin: 0 auto; 
+      font-family: Arial;
+      font-weight: 100;
+      text-align: center; 
+      box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      border-radius: 50%;
+        width: 30px;
+        height: 30px;
+      display: flex;
+        justify-content: center;
+        align-items: center;
+       /*box-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #fff, 0 0 80px #00ff00; if want to glow*/  
+      } 
+  
+.skill-planet span {
+    display: block;
+  }
+  
+  .skill-orbit:nth-child(1) .skill-planet {
+    background: #A9925F;
+    border: 2px solid #FFF9BF;
+    color: #FFF9BF;
+    font-size: 16px;
+    line-height: 45px;
+    -webkit-animation: travelOrbit 10s infinite linear;
+    animation: travelOrbit 10s infinite linear;
+    -webkit-transform-origin: 50% 713%;
+    transform-origin: 50% 713%;
+    background-image: url("https://img.freepik.com/free-icon/snakes_318-368381.jpg"); /* add your image URL here */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .skill-orbit:nth-child(1) span {
+    -webkit-animation: unrotate 10s infinite linear;
+    animation: unrotate 10s infinite linear;
+  }
+  
+  .skill-orbit:nth-child(2) .skill-planet {
+    background: #5F6151;
+    border: 2px solid #A3B476;
+    color: #A3B476;
+    font-size: 12px;
+    background-image: url("https://pbs.twimg.com/profile_images/1649093986852937728/TcHloZbL_400x400.jpg"); /* add your image URL here */
+    background-size: cover;
+    background-position: center;
+    /*line-height: /*To make only the planets glow, you can remove the `box-shadow` property from the `.skill-orbit` class and instead add it to the `.skill-planet` class. Here's the updated CSS:*/
+  }  
+  .skill-orbit:nth-child(3) .skill-planet{
+      background: #443F35;
+      border:2px solid #C77751;
+      color:#C77751;
+      font-size: 9px;
+      line-height: 26px;
+      background-image: url("https://cdn-icons-png.flaticon.com/512/6132/6132221.png"); /* add your image URL here */
+      background-size: cover;
+      background-position: center;
+  }
+  .skill-orbit:nth-child(4) .skill-planet{
+      background: #6E391E;
+      border:2px solid #FBAF3F;
+      color:#FBAF3F;
+      font-size: 18px;
+      line-height: 26px;
+      background-image: url("https://cdn3.iconfinder.com/data/icons/inficons/512/github.png"); /* add your image URL here */
+      background-size: cover;
+      background-position: center;
+  }
+  .skill-orbit:nth-child(5) .skill-planet{
+      background: #0064B1;
+      border:2px solid #46BAEB;
+      color:#46BAEB;
+      font-size: 18px;
+      line-height: 26px;
+      background-image: url("https://w7.pngwing.com/pngs/150/480/png-transparent-mysql-database-mariadb-phpmyadmin-blog-miscellaneous-text-logo-thumbnail.png"); /* add your image URL here */
+      background-size: cover;
+      background-position: center;
+     /* box-shadow: 0 0 5px #03e9f4,
+      0 0 25px #03e9f4,
+      0 0 50px #03e9f4,
+      0 0 200px #03e9f4; planet*/
+  } 
+  .skill-orbit:nth-child(1) .skill-planet{
+      -webkit-animation: travelOrbit 30s infinite linear;
+      animation: travelOrbit 30s infinite linear;
+      -webkit-transform-origin: 50% 713%;
+      transform-origin: 50% 713%;
+      filter: hue-rotate(45deg);
+  }
+  .skill-orbit:nth-child(1) span{
+      -webkit-animation: unrotate 10s infinite linear;
+      animation: unrotate 10s infinite linear;
+  }
+  .skill-orbit:nth-child(2) .skill-planet{
+      -webkit-animation: travelOrbit 20s infinite linear;
+      animation: travelOrbit 20s infinite linear;
+      -webkit-transform-origin: 50% 597%;
+      transform-origin: 50% 597%;
+      /*background-color: #0fea1e;
+  box-shadow: 0 0 5px #0fea1e,
+              0 0 25px #0fea1e,
+              0 0 50px #0fea1e,
+              0 0 200px #0fea1e; planet2*/
+  
+  }
+  .skill-orbit:nth-child(2) span{
+      -webkit-animation: unrotate 20s infinite linear; 
+      animation: unrotate 20s infinite linear; 
+  }
+  .skill-orbit:nth-child(3) .skill-planet{
+      -webkit-animation: travelOrbit 16s infinite linear;
+      animation: travelOrbit 16s infinite linear;
+      -webkit-transform-origin: 50% 480%;
+      transform-origin: 50% 480%;
+      background-color: #aa069c;
+      /*box-shadow: 0 0 5px #aa069c,
+                  0 0 25px #aa069c,
+                  0 0 50px #aa069c,
+                  0 0 200px #aa069c;*planet*/
+      
+  }
+  .skill-orbit:nth-child(3) span{
+      -webkit-animation: unrotate 6s infinite linear; 
+      animation: unrotate 6s infinite linear; 
+  }
+  .skill-orbit:nth-child(4) .skill-planet{
+      -webkit-animation: travelOrbit 25s infinite linear;
+      animation: travelOrbit 25s infinite linear;
+      -webkit-transform-origin: 50% 363%;
+      transform-origin: 50% 363%;
+      /*background-color: #f6b80d;
+      box-shadow: 0 0 5px #f6b80d,
+                  0 0 25px #f6b80d,
+                  0 0 50px #f6b80d,
+                  0 0 200px #f6b80d;*/
+      
+
+  }
+  .skill-orbit:nth-child(4) span{
+      -webkit-animation: unrotate 4s infinite linear; 
+      animation: unrotate 4s infinite linear; 
+  }
+  .skill-orbit:nth-child(5) .skill-planet{
+      -webkit-animation: travelOrbit 20s infinite linear;
+      animation: travelOrbit 20s infinite linear;
+      -webkit-transform-origin: 50% 243%;
+      transform-origin: 50% 243%;
+      
+  }
+  .skill-orbit:nth-child(5) span{
+      -webkit-animation: unrotate 2s infinite linear; 
+      animation: unrotate 2s infinite linear; 
+  } 
+  @-webkit-keyframes travelOrbit { 
+      0% { -webkit-transform: rotate(0deg); } 
+      100% { -webkit-transform: rotate(360deg); } 
+  } 
+  @keyframes travelOrbit { 
+      0% { transform: rotate(0deg); } 
+      100% { transform: rotate(360deg); } 
+  }
+  
+  @-webkit-keyframes unrotate { 
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(-360deg); } 
+  }  
+  @keyframes unrotate { 
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(-360deg); } 
+  } 
